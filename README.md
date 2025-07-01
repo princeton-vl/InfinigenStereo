@@ -27,12 +27,51 @@ If you find Infinigen-Stereo useful for your work, please consider citing our ac
 }
 ```
 
+<img src="imgs/sample.jpg" width='1400'>
+
+
 ## Generator Code
 
 Coming Soon!
 
-## Dataset
+## InfinigenStereo Dataset
 
-<img src="imgs/sample.jpg" width='1400'>
+Our dataset is now available on <a href=" https://huggingface.co/datasets/pvl-lab/InfinigenStereo"> HuggingFace</a>. 
+You can download it with the command 
 
-Coming Soon!
+```
+pip install huggingface-cli
+huggingface-cli download pvl-lab/InfinigenStereo --repo-type dataset
+```
+
+The dataset file structure is as follows:
+
+```
+.
+└── InfinigenStereo/
+    ├── indoor/
+    │   └── seed_num/
+    │       └── frames/
+    │           ├── Image/
+    │           │   ├── camera_0
+    │           │   └── camera_1
+    │           ├── camview/
+    │           │   ├── camera_0
+    │           │   └── camera_1
+    │           ├── disparity/
+    │           │   └── camera_0
+    │           ├── occ_mask/
+    │           │   └── camera_0
+    │           └── sky_mask/
+    │               └── camera_0
+    ├── flying/
+    │   └── ...
+    └── nature/
+        └── ...
+```
+
+Camera 0 and 1 correspond to left and right camera frames, respectively. 
+We provide disparity, occlusion, sky-region masks for the left camera.
+`camview` contains `.npz` files that contain a dictionary with indices `K`, `T`, `HW`, corresponding to calibration, translation, and resolution matrices.
+
+
