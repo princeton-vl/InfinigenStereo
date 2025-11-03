@@ -1,0 +1,14 @@
+sample_scene_spec.config_distribution = [
+    ("forest", 4),
+    ("river", 8),
+    ("desert", 6),
+    ("coral_reef", 6),
+    ("cave", 4),
+    ("mountain", 4),
+    ("canyon", 4),
+    ("plain", 4),
+    ("cliff", 4),
+    ("coast", 4),
+    ("arctic", 1),
+    ("snowy_mountain", 1),
+]

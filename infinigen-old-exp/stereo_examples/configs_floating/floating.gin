@@ -1,0 +1,106 @@
+compose_indoors.floating_objs_chance = 1
+compose_indoors.floating_objs_enabled = True
+
+compose_indoors.num_floating = ('discrete_uniform', 10, 30)
+
+compose_indoors.norm_floating_size = True
+compose_indoors.enable_collision_floating = False
+compose_indoors.enable_collision_solved = False
+compose_indoors.no_glass = True
+compose_indoors.no_solve = False
+compose_indoors.use_nature = True
+
+compose_indoors.no_light_aug=False
+compose_indoors.no_metal=True
+compose_indoors.no_tex=False
+
+compose_indoors.terrain_enabled=False
+configure_render_cycles.num_samples = 2048
+configure_render_cycles.denoise = True
+flat/configure_render_cycles.min_samples = 1
+flat/configure_render_cycles.num_samples = 16
+
+keep_cam_pose_proposal.min_terrain_distance = 1
+compose_indoors.baseline = ("uniform", 0.03, 0.4) 
+
+compose_indoors.indoor_facs = ['infinigen.assets.objects.appliances.BeverageFridgeFactory',
+'infinigen.assets.objects.appliances.DishwasherFactory',
+'infinigen.assets.objects.appliances.MicrowaveFactory',
+'infinigen.assets.objects.appliances.OvenFactory',
+'infinigen.assets.objects.appliances.MonitorFactory',
+'infinigen.assets.objects.appliances.TVFactory',
+'infinigen.assets.objects.bathroom.BathroomSinkFactory',
+'infinigen.assets.objects.bathroom.BathtubFactory',
+'infinigen.assets.objects.bathroom.HardwareFactory',
+'infinigen.assets.objects.bathroom.ToiletFactory',
+'infinigen.assets.objects.clothes.BlanketFactory',
+'infinigen.assets.objects.clothes.PantsFactory',
+'infinigen.assets.objects.clothes.ShirtFactory',
+'infinigen.assets.objects.clothes.TowelFactory',
+'infinigen.assets.objects.elements.doors.GlassPanelDoorFactory',
+'infinigen.assets.objects.elements.doors.LiteDoorFactory',
+'infinigen.assets.objects.elements.doors.LouverDoorFactory',
+'infinigen.assets.objects.elements.doors.PanelDoorFactory',
+'infinigen.assets.objects.elements.warehouses.PalletFactory',
+'infinigen.assets.objects.elements.RugFactory',
+'infinigen.assets.objects.elements.NatureShelfTrinketsFactory',
+'infinigen.assets.objects.lamp.ceiling_classic_lamp.CeilingClassicLampFactory',
+'infinigen.assets.objects.seating.chairs.BarChairFactory',
+'infinigen.assets.objects.seating.chairs.ChairFactory',
+'infinigen.assets.objects.seating.chairs.OfficeChairFactory',
+'infinigen.assets.objects.seating.BedFactory',
+'infinigen.assets.objects.seating.BedFrameFactory',
+'infinigen.assets.objects.seating.MattressFactory',
+'infinigen.assets.objects.seating.PillowFactory',
+'infinigen.assets.objects.seating.SofaFactory',
+'infinigen.assets.objects.seating.ArmChairFactory',
+'infinigen.assets.objects.shelves.SingleCabinetFactory',
+'infinigen.assets.objects.shelves.KitchenCabinetFactory',
+'infinigen.assets.objects.shelves.CellShelfFactory',
+'infinigen.assets.objects.shelves.LargeShelfFactory',
+'infinigen.assets.objects.shelves.SimpleBookcaseFactory',
+'infinigen.assets.objects.shelves.SimpleDeskFactory',
+'infinigen.assets.objects.shelves.TriangleShelfFactory',
+'infinigen.assets.objects.shelves.KitchenSpaceFactory',
+'infinigen.assets.objects.shelves.KitchenIslandFactory',
+'infinigen.assets.objects.shelves.TVStandFactory',
+'infinigen.assets.objects.table_decorations.BookColumnFactory',
+'infinigen.assets.objects.table_decorations.BookFactory',
+'infinigen.assets.objects.table_decorations.BookStackFactory',
+'infinigen.assets.objects.table_decorations.SinkFactory',
+'infinigen.assets.objects.table_decorations.TapFactory',
+'infinigen.assets.objects.table_decorations.VaseFactory',
+'infinigen.assets.objects.tables.TableCocktailFactory',
+'infinigen.assets.objects.tables.TableDiningFactory',
+'infinigen.assets.objects.tableware.BottleFactory',
+'infinigen.assets.objects.tableware.BowlFactory',
+'infinigen.assets.objects.tableware.CanFactory',
+'infinigen.assets.objects.tableware.ChopsticksFactory',
+'infinigen.assets.objects.tableware.CupFactory',
+'infinigen.assets.objects.tableware.FoodBagFactory',
+'infinigen.assets.objects.tableware.FoodBoxFactory',
+'infinigen.assets.objects.tableware.ForkFactory',
+'infinigen.assets.objects.tableware.FruitContainerFactory',
+'infinigen.assets.objects.tableware.JarFactory',
+'infinigen.assets.objects.tableware.KnifeFactory',
+'infinigen.assets.objects.tableware.LidFactory',
+'infinigen.assets.objects.tableware.PanFactory',
+'infinigen.assets.objects.tableware.PlateFactory',
+'infinigen.assets.objects.tableware.PotFactory',
+'infinigen.assets.objects.tableware.SpoonFactory',
+'infinigen.assets.objects.tableware.WineglassFactory',
+'infinigen.assets.objects.tableware.PlantContainerFactory',
+'infinigen.assets.objects.tableware.LargePlantContainerFactory',
+'infinigen.assets.objects.wall_decorations.WallArtFactory',
+'infinigen.assets.objects.wall_decorations.BalloonFactory',
+'infinigen.assets.objects.wall_decorations.MirrorFactory',
+'infinigen.assets.objects.windows.WindowFactory',
+'infinigen.assets.objects.organizer.basket.BasketBaseFactory',
+'infinigen.assets.objects.organizer.plate_rack.PlateOnRackBaseFactory']
+
+compose_indoors.nature_facs = []
+
+
+
+
+

@@ -1,0 +1,14 @@
+include 'infinigen/datagen/configs/data_schema/monocular.gin'
+iterate_scene_tasks.n_camera_rigs = 1
+iterate_scene_tasks.n_subcams = 2
+
+iterate_scene_tasks.global_tasks = [
+    {'name': "coarse", 'func': @queue_coarse},
+    {'name': "fineterrain", 'func': @queue_fine_terrain}, 
+    {'name': "fine", 'func': @queue_populate},
+]
+iterate_scene_tasks.view_dependent_tasks = []
+iterate_scene_tasks.camera_dependent_tasks = [
+    {'name': 'rendershort', 'func': @rendershort/queue_render},
+    {'name': 'renderbackup', 'func': @renderbackup/queue_render, 'condition': 'prev_failed'}
+]

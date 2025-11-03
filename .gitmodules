@@ -1,0 +1,4 @@
+[submodule "infinigen-module"]
+	path = infinigen-module
+	url = https://github.com/princeton-vl/infinigen
+	branch = main

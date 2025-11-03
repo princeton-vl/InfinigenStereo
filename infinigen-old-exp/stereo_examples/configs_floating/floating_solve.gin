@@ -1,0 +1,13 @@
+FloorPlanSolver.n_divide_trials = 25
+FloorPlanSolver.iters_mult = 25
+GraphMaker.fast=True
+
+home_room_constraints.fast = True
+
+solve_objects.addition_weight_scalar = 10
+
+compose_indoors.solve_steps_large = 15
+compose_indoors.solve_steps_medium = 40
+compose_indoors.solve_steps_small = 5
+
+compose_indoors.terrain_enabled = False
