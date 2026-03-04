@@ -1,4 +1,4 @@
-# What Makes Good Synthetic Training Data for Zero-Shot Stereo Matching?
+# What Makes Good Synthetic Training Data for Zero-Shot Stereo Matching? (CVPR 2026)
 
 We introduce **WMGStereo**, a procedural dataset generator specifically optimized for zero-shot stereo matching performance. Using our generator, we create and release WMGStereo-150k, a new training dataset for stereo matching.
 
@@ -57,7 +57,7 @@ pip install -e ".[dev,terrain,vis]"
 
 ## Generating new data
 
-Inside the `infinigen-submodule` directory, you can run the following commands to generate scenes. To modify data generation settings, the main relevant configs and driver scripts are in `stereo_examples`.
+Inside the `infinigen-submodule` directory, you can run the following commands to generate scenes. To modify data generation settings, the main relevant configs and driver scripts are in `stereo_examples`. We provide example scripts and utilities in `util_scripts.py` to post-process generated data for disparity and masks.
 
 Generate indoor scenes:
 
@@ -82,7 +82,7 @@ The experiments/data in the paper were generated wih an older version of Infinig
 
 ## WMGStereo Dataset
 
-Our dataset is now available on <a href=" https://huggingface.co/datasets/pvl-lab/WMGStereo"> HuggingFace</a>. 
+Our dataset is now available on <a href="https://huggingface.co/datasets/princeton-vl/WMGStereo"> HuggingFace</a>. 
 You can download it with the command 
 
 ```
@@ -115,6 +115,8 @@ The dataset file structure is as follows:
     └── nature/
         └── ...
 ```
+
+We provide both `nature` and `nature_filtered`; the latter has a more larger minimum distance threshold (5m) and was used for the experiments in the paper. `nature` has higher average disparity and is therefore more challenging. We provide code snippets in `util_scripts` to do custom filtering of our dataset to any minimum distance threshold.
 
 Camera 0 and 1 correspond to left and right camera frames, respectively. 
 We provide disparity, occlusion, sky-region masks for the left camera.
