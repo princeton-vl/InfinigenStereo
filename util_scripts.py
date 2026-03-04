@@ -141,7 +141,7 @@ def depth_from_disparity(disp_px: np.ndarray, f_px: float, B: float) -> np.ndarr
         Z = np.where(disp_px > 0, f_px * B / disp_px, 0.0)
     return Z.astype(np.float32)
 
-def get_disp(disp, seed, cam_id, frame):
+def get_depth(disp, seed, cam_id, frame):
     camview1_path = get_frame_path(seed, cam_id, 0, frame, 'camview_npz')
     camview2_path = get_frame_path(seed, cam_id, 1, frame, 'camview_npz')
     
